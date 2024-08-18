@@ -1,0 +1,154 @@
+color = {
+    white = color.new(255, 255, 255),
+    red = color.new(255, 0, 0),
+    blue = color.new(0, 0, 255)
+}
+
+if color.white == nil or color.red == nil then
+    showErrorAndExit("Error: Colores no definidos correctamente.")
+end
+
+-- Función para verificar conexión a internet
+function checkInternet()
+    local response = http.get("http://www.google.com")
+    return response ~= nil
+end
+
+-- Función para mostrar mensaje de error y cerrar la app
+function showErrorAndExit(message)
+    screen.print(480, 272, message, 1.5, color.white, color.red, __ACENTER)
+    screen.flip()
+    os.delay(3000)
+    os.exit()
+end
+
+-- Función para descargar contenido desde una URL
+function downloadContent(url, path)
+    local response = http.get(url)
+    if response and response.status == 200 then
+        files.write(path, response.body)
+        return true
+    end
+    return false
+end
+
+-- Función para cargar información desde una URL
+function loadInfo(url)
+    local response = http.get(url)
+    if response then
+        if response.status then
+            if response.status == 200 then
+                return response.body
+            else
+                screen.print(480, 272, "Error: HTTP Status " .. response.status, 1.5, color.white, color.red, __ACENTER)
+                screen.flip()
+                os.delay(3000)
+            end
+        else
+            screen.print(480, 272, "Error: No HTTP status", 1.5, color.white, color.red, __ACENTER)
+            screen.flip()
+            os.delay(3000)
+        end
+    else
+        screen.print(480, 272, "No response from server", 1.5, color.white, color.red, __ACENTER)
+        screen.flip()
+        os.delay(3000)
+    end
+    return nil
+end
+
+-- Función para procesar y mostrar la información
+function processInfo(info)
+    local objects = {}
+    for list in info:gmatch("#LIST#(.-)#ENDLIST#") do
+        local obj = {}
+        obj.name = list:match("NAME:(.-)\n") or ""
+        obj.creator = list:match("CREATOR:(.-)\n") or ""
+        obj.cover = list:match("COVER:(.-)\n") or ""
+        obj.rut = list:match("RUT:(.-)\n") or ""
+        obj.archive = list:match("ARCHIVE:(.-)\n") or ""
+        table.insert(objects, obj)
+    end
+    return objects
+end
+
+-- Función para mostrar la interfaz gráfica
+function showInterface(objects)
+    local scroll = newScroll(objects, 10)
+    local currentCover = nil
+    local currentPath = "ux0:#MovieStreamList/covers/"
+    
+    while true do
+        buttons.read()
+        screen.clear()
+        
+        -- Mostrar botones
+        local y = 30
+        for i = scroll.ini, scroll.lim do
+            screen.print(850, y, objects[i].name, 1.2, color.white, color.blue, __ALEFT)
+            y = y + 30
+        end
+
+        -- Mostrar imagen si existe
+        if currentCover then
+            image.blit(currentCover, 50, 30)
+        end
+
+        -- Mostrar botón de descarga si corresponde
+        if objects[scroll.sel].archive ~= "" then
+            if not files.exists("ux0:#MovieStreamList/" .. objects[scroll.sel].name .. ".m3u8") then
+                screen.print(50, 400, "DESCARGAR", 1.2, color.white, color.red, __ALEFT)
+                if buttons.cross then
+                    downloadContent(objects[scroll.sel].archive, "ux0:#MovieStreamList/" .. objects[scroll.sel].name .. ".m3u8")
+                end
+            end
+        end
+
+        -- Navegar entre botones
+        if buttons.up or buttons.analogly < -60 then
+            scroll:up()
+        end
+        if buttons.down or buttons.analogly > 60 then
+            scroll:down()
+        end
+
+        -- Cargar nueva imagen si corresponde
+        if objects[scroll.sel].cover ~= "" then
+            local coverPath = currentPath .. objects[scroll.sel].name .. ".png"
+            if not files.exists(coverPath) then
+                downloadContent(objects[scroll.sel].cover, coverPath)
+            end
+            currentCover = image.load(coverPath)
+        end
+
+        -- Leer nueva información si corresponde
+        if buttons.cross and objects[scroll.sel].rut ~= "" then
+            local newInfo = loadInfo(objects[scroll.sel].rut)
+            if newInfo then
+                objects = processInfo(newInfo)
+                scroll:set(objects)
+            end
+        end
+
+        -- Mostrar pantalla
+        screen.flip()
+
+        -- Salir de la aplicación
+        if buttons.start then
+            os.exit()
+        end
+    end
+end
+
+-- Inicio de la aplicación
+if not checkInternet() then
+    showErrorAndExit("Debe conectarse a internet.")
+else
+    local info = loadInfo("https://github.com/VegettoSan/MovieStreamList/raw/main/Main.movstm")
+    if info then
+        local objects = processInfo(info)
+        showInterface(objects)
+    else
+        showErrorAndExit("Error al cargar la información.")
+    end
+end

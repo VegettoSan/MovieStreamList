@@ -1,0 +1,149 @@
+-- Establecer la URL del archivo a descargar
+local url = "https://raw.githubusercontent.com/VegettoSan/MovieStreamList/main/Main.movstm"
+-- Establecer la ruta donde se guardará el archivo descargado
+local path = "ux0:#MovieStreamList/Main.movstm"
+
+-- Comprobar si el archivo ya existe en la ruta especificada
+if not files.exists(path) then
+    -- Si el archivo no existe, descargarlo y guardarlo en la ruta especificada
+    http.getfile(url, path)
+end
+
+-- Leer el contenido del archivo
+local file = io.open(path, "r")
+local content = file:read("*all")
+file:close()
+
+-- Procesar el contenido del archivo según el nuevo formato
+local items = {}
+local currentItem = {}
+
+for line in content:gmatch("[^\r\n]+") do
+    if line == "#LIST#" then
+        -- Iniciar un nuevo objeto
+        currentItem = {name = nil, rut = nil}
+    elseif line == "#ENDLIST#" then
+        -- Finalizar el objeto actual y añadirlo a la lista de items
+        if currentItem.name and currentItem.rut then
+            table.insert(items, currentItem)
+        end
+        currentItem = nil
+    elseif currentItem then
+        local nameMatch = line:match("NAME:(.+)")
+        local rutMatch = line:match("RUT:(.+)")
+        if nameMatch then
+            currentItem.name = nameMatch
+        elseif rutMatch then
+            currentItem.rut = rutMatch
+        end
+    end
+end
+
+-- Establecer el índice del elemento seleccionado y el índice del primer elemento visible en pantalla
+local selectedIndex = 1
+local firstVisibleIndex = 1
+
+-- Mostrar los nombres de los elementos en la pantalla
+local function displayItems()
+    screen.clear()
+    for i = firstVisibleIndex, math.min(firstVisibleIndex + 10, #items) do
+        local item = items[i]
+        if i == selectedIndex then
+            -- Si el elemento está seleccionado, mostrar su nombre con una flecha
+            screen.print(10, 10 + (i - firstVisibleIndex) * 20, "> " .. item.name)
+        else
+            -- Si el elemento no está seleccionado, mostrar su nombre normalmente
+            screen.print(10, 10 + (i - firstVisibleIndex) * 20, "  " .. item.name)
+        end
+    end
+    screen.flip()
+end
+
+-- Mostrar los elementos iniciales
+displayItems()
+
+-- Mantener la aplicación en ejecución y permitir al usuario interactuar con ella
+while true do
+    -- Leer las pulsaciones de los botones
+    buttons.read()
+
+    -- Comprobar si se presionó algún botón para salir de la aplicación
+    if buttons.start then
+        break
+    end
+
+    -- Comprobar si se presionó algún otro botón y actualizar la pantalla en consecuencia
+    if buttons.up then
+        -- Si se presionó la tecla UP, seleccionar el elemento anterior y ajustar el índice del primer elemento visible si es necesario.
+        selectedIndex = math.max(selectedIndex - 1, 1)
+        firstVisibleIndex = math.max(math.min(firstVisibleIndex, selectedIndex), selectedIndex - 10)
+    elseif buttons.down then
+        -- Si se presionó la tecla DOWN, seleccionar el siguiente elemento y ajustar el índice del primer elemento visible si es necesario.
+        selectedIndex = math.min(selectedIndex + 1, #items)
+        firstVisibleIndex = math.min(math.max(firstVisibleIndex, selectedIndex - 10), selectedIndex)
+    elseif buttons.cross then
+        -- Si se presionó la tecla CROSS, leer información de URL y crear nuevos elementos
+
+        -- Comprobar si el índice seleccionado es válido
+        if items[selectedIndex] then
+            local item = items[selectedIndex]
+
+            -- Establecer la ruta donde se guardará el archivo nuevo
+            local newPath = "ux0:#MovieStreamList/" .. item.name .. ".m3u8"
+
+            -- Verificar si el archivo nuevo ya existe en la ruta especificada
+            local newContent = ""
+            if files.exists(newPath) then
+                -- Si el archivo nuevo existe, leer su contenido
+                local newFile = io.open(newPath, "r")
+                newContent = newFile:read("*all")
+                newFile:close()
+            else
+                -- Si el archivo nuevo no existe, descargar su contenido desde la URL del ítem seleccionado y guardarlo en la ruta especificada
+                newContent = http.get(item.rut)
+                local newFile = io.open(newPath, "w")
+                newFile:write(newContent)
+                newFile:close()
+            end
+
+            -- Limpiar elementos existentes y crear nuevos elementos a partir del contenido descargado
+            items = {}
+            local newItems = {}
+            local currentItem = {}
+
+            for line in newContent:gmatch("[^\r\n]+") do
+                if line == "#LIST#" then
+                    -- Iniciar un nuevo objeto
+                    currentItem = {name = nil, rut = nil}
+                elseif line == "#ENDLIST#" then
+                    -- Finalizar el objeto actual y añadirlo a la lista de items
+                    if currentItem.name and currentItem.rut then
+                        table.insert(newItems, currentItem)
+                    end
+                    currentItem = nil
+                elseif currentItem then
+                    local nameMatch = line:match("NAME:(.+)")
+                    local rutMatch = line:match("RUT:(.+)")
+                    if nameMatch then
+                        currentItem.name = nameMatch
+                    elseif rutMatch then
+                        currentItem.rut = rutMatch
+                    end
+                end
+            end
+
+            -- Actualizar items con el nuevo contenido
+            items = newItems
+
+            -- Restablecer el índice seleccionado y el primer índice visible.
+            selectedIndex = 1
+            firstVisibleIndex = 1
+        end
+    end
+
+    -- Actualizar pantalla con nuevo contenido
+    displayItems()
+
+    -- Esperar un poco antes de verificar los botones nuevamente
+    os.delay(100)
+end

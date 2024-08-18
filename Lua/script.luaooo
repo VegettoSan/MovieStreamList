@@ -1,0 +1,128 @@
+-- Establecer la URL del archivo a descargar
+local url = "https://raw.githubusercontent.com/VegettoSan/MovieStreamList/main/Main.movstm"
+-- Establecer la ruta donde se guardará el archivo descargado
+local path = "ux0:#MovieStreamList/Main.movstm"
+
+-- Comprobar si el archivo ya existe en la ruta especificada
+if not files.exists(path) then
+    -- Si el archivo no existe, descargarlo y guardarlo en la ruta especificada
+    http.getfile(url, path)
+end
+
+-- Leer el contenido del archivo
+local file = io.open(path, "r")
+local content = file:read("*all")
+file:close()
+
+-- Dividir el contenido del archivo en líneas y extraer los nombres y URLs de los elementos
+local lines = {}
+local urls = {}
+for line in content:gmatch("[^\r\n]+") do
+    if line:sub(1, 7) == "#EXTINF" then
+        local name = line:match("#EXTINF:[^,]+,(.+)")
+        table.insert(lines, name)
+    elseif line:sub(1, 4) == "http" then
+        table.insert(urls, line)
+    end
+end
+
+-- Establecer el índice del elemento seleccionado y el índice del primer elemento visible en pantalla
+local selectedIndex = 1
+local firstVisibleIndex = 1
+
+-- Mostrar los nombres de los elementos en la pantalla
+for i=firstVisibleIndex,math.min(firstVisibleIndex+10,#lines) do
+    local line = lines[i]
+    if i == selectedIndex then
+        -- Si el elemento está seleccionado, mostrar su nombre con una flecha
+        screen.print(10, 10 + (i - firstVisibleIndex) * 20, "> " .. line)
+    else
+        -- Si el elemento no está seleccionado, mostrar su nombre normalmente
+        screen.print(10, 10 + (i - firstVisibleIndex) * 20, "  " .. line)
+    end
+end
+screen.flip()
+
+-- Mantener la aplicación en ejecución y permitir al usuario interactuar con ella
+while true do
+    -- Leer las pulsaciones de los botones
+    buttons.read()
+
+    -- Comprobar si se presionó algún botón para salir de la aplicación
+    if buttons.start then
+        break
+    end
+
+    -- Comprobar si se presionó algún otro botón y actualizar la pantalla en consecuencia
+    if buttons.up then
+        -- Si se presionó la tecla UP, seleccionar el elemento anterior y ajustar el índice del primer elemento visible si es necesario.
+        selectedIndex = math.max(selectedIndex - 1, 1)
+        firstVisibleIndex = math.max(math.min(firstVisibleIndex, selectedIndex), selectedIndex - 10)
+    elseif buttons.down then
+        -- Si se presionó la tecla DOWN, seleccionar el siguiente elemento y ajustar el índice del primer elemento visible si es necesario.
+        selectedIndex = math.min(selectedIndex + 1, #lines)
+        firstVisibleIndex = math.min(math.max(firstVisibleIndex, selectedIndex - 10), selectedIndex)
+    elseif buttons.cross then
+        -- Si se presionó la tecla CROSS, leer información de URL y crear nuevos elementos
+
+        -- Set the path where the new file will be saved.
+        local newPath = "ux0:#MovieStreamList/" .. lines[selectedIndex] .. ".m3u8"
+
+        -- Check if the new file already exists at the specified path.
+        local newContent = ""
+        if files.exists(newPath) then
+            -- If the new file exists, read its contents.
+            local newFile = io.open(newPath, "r")
+            newContent = newFile:read("*all")
+            newFile:close()
+        else
+            -- If the new file does not exist, download its contents from the URL of the selected item and save it at the specified path.
+            newContent = http.get(urls[selectedIndex])
+            local newFile = io.open(newPath, "w")
+            newFile:write(newContent)
+            newFile:close()
+        end
+
+        -- Split downloaded content into lines and extract names and URLs of new items.
+        local newLines = {}
+        local newUrls = {}
+        for line in newContent:gmatch("[^\r\n]+") do
+            if line:sub(1, 7) == "#EXTINF" then
+                local name = line:match("#EXTINF:[^,]+,(.+)")
+                table.insert(newLines, name)
+            elseif line:sub(1, 4) == "http" then
+                table.insert(newUrls, line)
+            end
+        end
+
+        -- Clear existing items and create new items from downloaded content.
+        lines = {}
+        urls = {}
+        for i=1,#newLines do 
+            table.insert(lines,newLines[i])
+            table.insert(urls,newUrls[i])
+        end
+
+        -- Reset selected index and first visible index.
+        selectedIndex = 1
+        firstVisibleIndex = 1
+
+    end
+
+    -- Update screen with new content.
+    for i=firstVisibleIndex,math.min(firstVisibleIndex+10,#lines) do
+        local line = lines[i]
+        if i == selectedIndex then
+            -- If item is selected, show its name with an arrow.
+            screen.print(10, 10 + (i - firstVisibleIndex) * 20, "> " .. line)
+        else
+            -- If item is not selected, show its name normally.
+            screen.print(10, 10 + (i - firstVisibleIndex) * 20, "  " .. line)
+        end
+    end
+
+    screen.flip()
+
+    -- Wait a bit before checking buttons again.
+    os.delay(100)
+end
