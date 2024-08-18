@@ -5,3 +5,10 @@ COVER:
 RUT:https://raw.githubusercontent.com/VegettoSan/MovieStreamList/main/Anime.movstm
 ARCHIVE:
 #ENDLIST#
+#LIST#
+NAME:Animes
+CREATOR:
+COVER:
+RUT:https://raw.githubusercontent.com/VegettoSan/MovieStreamList/main/Peliculas.movstm
+ARCHIVE:
+#ENDLIST#
