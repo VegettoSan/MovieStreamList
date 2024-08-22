@@ -69,13 +69,6 @@ RUT:
 ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/Assesination%20Classroom%20(Sub)/Assesination%20Classroom%20(Sub).m3u8
 #ENDLIST#
 #LIST#
-NAME:BTX (Latino)
-CREATOR:VegettoSanDev
-COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/BTX%20(Latino)/BTXCover.jpg?raw=true
-RUT:
-ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/BTX%20(Latino)/BTX.m3u8
-#ENDLIST#
-#LIST#
 NAME:Baccano (Sub)
 CREATOR:VegettoSanDev
 COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/Baccano%20(Sub)/BaccanoCover.jpg?raw=true
@@ -88,6 +81,20 @@ CREATOR:VegettoSanDev
 COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/Beastars%20(Sub)/BeastarsCover.jpg?raw=true
 RUT:
 ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/Beastars%20(Sub)/Beastars%20(Sub).m3u8
+#ENDLIST#
+#LIST#
+NAME:BTX (Latino)
+CREATOR:VegettoSanDev
+COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/BTX%20(Latino)/BTXCover.jpg?raw=true
+RUT:
+ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/BTX%20(Latino)/BTX.m3u8
+#ENDLIST#
+#LIST#
+NAME:Cyberpunk Edgerunners (Sub)
+CREATOR:VegettoSanDev
+COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/Cyberpunk%20Edgerunners%20(Sub)/CYB3RPUNCK3DG3RUNN3R2COVER.jpg?raw=true
+RUT:
+ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/Cyberpunk%20Edgerunners%20(Sub)/CyberpunkEdgerunners(Sub).m3u8
 #ENDLIST#
 #LIST#
 NAME:Halo Legends (Sub)
