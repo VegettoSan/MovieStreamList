@@ -6,6 +6,27 @@ RUT:https://github.com/VegettoSan/MovieStreamList/raw/main/Main.movstm
 ARCHIVE:
 #ENDLIST#
 #LIST#
+NAME:11 Eyes (Sub)
+CREATOR:VegettoSanDev
+COVER:https://raw.githubusercontent.com/VegettoSan/MovieStreamList/main/Anime/11%20Eyes%20(Sub)/11EyesCover.jpg
+RUT:
+ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/11%20Eyes%20(Sub)/11%20Eyes%20(Sub).m3u8
+#ENDLIST#
+#LIST#
+NAME:Afro Samurai (Sub)
+CREATOR:VegettoSanDev
+COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/Afro%20Samurai%20(Sub)/AfroSamuraiCover.jpg?raw=true
+RUT:
+ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/Afro%20Samurai%20(Sub)/Afro%20Samurai%20(Sub).m3u8
+#ENDLIST#
+#LIST#
+NAME:Aggretsuko (Sub)
+CREATOR:VegettoSanDev
+COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/Aggretsuko%20(Sub)/AggretsukoCover.jpg?raw=true
+RUT:
+ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/Aggretsuko%20(Sub)/Aggretsuko%20(Sub).m3u8
+#ENDLIST#
+#LIST#
 NAME:Angel Beats (Sub)
 CREATOR:VegettoSanDev
 COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/Angel%20Beats%20(Sub)/AngelBeatsCover.jpg?raw=true
