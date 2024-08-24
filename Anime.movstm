@@ -48,11 +48,25 @@ RUT:
 ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/Cyberpunk%20Edgerunners%20(Sub)/CyberpunkEdgerunners(Sub).m3u8
 #ENDLIST#
 #LIST#
+NAME:Dragon Ball Z(Latino)
+CREATOR:VegettoSanDev
+COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/DragonBallZ(Latino)/SagadeFreezerCOVER.jpg?raw=true
+RUT:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/DragonBallZ(Latino)/DragonBallZSagas.movstm
+ARCHIVE:
+#ENDLIST#
+#LIST#
 NAME:Halo Legends (Sub)
 CREATOR:VegettoSanDev
 COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/Halo%20Legends%20(Sub)/H4L0L3G3NDS_COVER.jpg?raw=true
 RUT:
 ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/Halo%20Legends%20(Sub)/HaloLegends(Japones%20Sub).m3u8
+#ENDLIST#
+#LIST#
+NAME:Neon Genesis Evangelion (Latino)
+CREATOR:VegettoSanDev
+COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/NeonGenesisEvangelion(Latino)/NeonGenesisEvangelionCOVER.jpg?raw=true
+RUT:
+ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/NeonGenesisEvangelion(Latino)/NeonGenesisEvangelion(Latino).m3u8
 #ENDLIST#
 #LIST#
 NAME:No Game No Life (Sub)

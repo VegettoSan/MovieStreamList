@@ -13,6 +13,13 @@ RUT:
 ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Series/Ben%2010%20Omniverse%20(Latino)/Ben10Omniverse(Latino).m3u8
 #ENDLIST#
 #LIST#
+NAME:Gravity Falls (Latino)
+CREATOR:VegettoSanDev
+COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Series/GravityFalls(Latino)/GravityFallsCOVER.jpg?raw=true
+RUT:
+ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Series/GravityFalls(Latino)/GravityFalls(Latino).m3u8
+#ENDLIST#
+#LIST#
 NAME:Halo (Latino)
 CREATOR:VegettoSanDev
 COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Series/Halo%20(Latino)/T1/H4L0TH323R132T1COVER.jpg?raw=true
@@ -20,9 +27,23 @@ RUT:https://github.com/VegettoSan/MovieStreamList/raw/main/Series/Halo%20(Latino
 ARCHIVE:
 #ENDLIST#
 #LIST#
+NAME:Lucifer (Latino)
+CREATOR:VegettoSanDev
+COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Series/Lucifer(Latino)/LuciferCOVER.jpg?raw=true
+RUT:
+ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Series/Lucifer(Latino)/Lucifer(Latino).m3u8
+#ENDLIST#
+#LIST#
 NAME:Thundercats (Latino)
 CREATOR:VegettoSanDev
 COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Series/Thundercats%20(Latino)/ThundercatsCOVER.jpg?raw=true
 RUT:
 ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Series/Thundercats%20(Latino)/Thundercats(Latino).m3u8
+#ENDLIST#
+#LIST#
+NAME:Trolls Hunter (Latino)
+CREATOR:VegettoSanDev
+COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Series/TrollsHunter(Latino)/TrollsHunterCOVER.jpg?raw=true
+RUT:
+ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Series/Thundercats%20(Latino)/TrollsHunter(Latino).m3u8
 #ENDLIST#
