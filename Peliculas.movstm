@@ -146,6 +146,13 @@ RUT:
 ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Peliculas/Soy%20Leyenda%20V.Ext%20(Latino)/SoyLeyendaV.Ext(Latino).m3u8
 #ENDLIST#
 #LIST#
+NAME:Ultraman: El Ascenso (Latino)
+CREATOR:VegettoSanDev
+COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Peliculas/UltramanElAscenso(Latino)/UltramanElAscensoCOVER.jpg?raw=true
+RUT:
+ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Peliculas/UltramanElAscenso(Latino)/UltramanElAscenso(Latino).m3u8
+#ENDLIST#
+#LIST#
 NAME:Van Helsing 2004 (Latino)
 CREATOR:VegettoSanDev
 COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Peliculas/Van%20Helsing%202004%20(Latino)/VanHelsing2004COVER.jpg?raw=true
