@@ -29,6 +29,7 @@ On PS Vita you need to download [NetStream](https://github.com/GrapheneCt/NetStr
 
 5) Enjoy this app.
 
+
 # **ESPAÑOL**
 
 Creé esta aplicación para poder ver películas y series subidas por la comunidad.
@@ -44,13 +45,13 @@ En Ps Vita nesecitas descargar [NetStream](https://github.com/GrapheneCt/NetStre
 
 # **ANDROID**
 
-1) Vaya a la [sección de lanzamientos] (https://github.com/VegettoSan/MovieStreamList/releases) y descargue la última versión del APK.
+1) Vaya a la [sección de lanzamientos](https://github.com/VegettoSan/MovieStreamList/releases) y descargue la última versión del APK.
 2) Instale el archivo .apk.
 3) Disfruta de la aplicación.
 
 # **PS VITA**
 
-1) Vaya a la [sección de lanzamientos] (https://github.com/VegettoSan/MovieStreamList/releases) y descargue la última versión del VPK.
+1) Vaya a la [sección de lanzamientos](https://github.com/VegettoSan/MovieStreamList/releases) y descargue la última versión del VPK.
 
 2) Transfiera el archivo .vpk a su consola Ps Vita mediante FTP o USB usando [VitaShell](https://github.com/TheOfficialFloW/VitaShell/releases).
 
