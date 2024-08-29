@@ -62,6 +62,13 @@ RUT:
 ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/Halo%20Legends%20(Sub)/HaloLegends(Japones%20Sub).m3u8
 #ENDLIST#
 #LIST#
+NAME:Mirai Nikki (sub)
+CREATOR:VegettoSanDev
+COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/MiraiNikki(sub)/MiraiNikkiCOVER.jpg?raw=true
+RUT:
+ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/MiraiNikki(sub)/MiraiNikki(sub).m3u8
+#ENDLIST#
+#LIST#
 NAME:Neon Genesis Evangelion (Latino)
 CREATOR:VegettoSanDev
 COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/NeonGenesisEvangelion(Latino)/NeonGenesisEvangelionCOVER.jpg?raw=true
@@ -74,6 +81,20 @@ CREATOR:VegettoSanDev
 COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/No%20Game%20No%20Life%20(Sub)/Anime/N0G4M3N0L1F3COVER.jpg?raw=true
 RUT:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/No%20Game%20No%20Life%20(Sub)/NoGameNoLifePACK.movstm
 ARCHIVE:
+#ENDLIST#
+#LIST#
+NAME:Psycho Pass (Sub)
+CREATOR:VegettoSanDev
+COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/PsychoPass(Sub)/PsychoPassCOVER.jpg?raw=true
+RUT:
+ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/PsychoPass(Sub)/PsychoPass(Sub).m3u8
+#ENDLIST#
+#LIST#
+NAME:Ranma y Medio (Latino)
+CREATOR:VegettoSanDev
+COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/RanmayMedio(Latino)/RanmayMedioCOVER.jpg?raw=true
+RUT:
+ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/RanmayMedio(Latino)/RanmayMedio(Latino).m3u8
 #ENDLIST#
 #LIST#
 NAME:STEINS GATE (Sub)
