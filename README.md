@@ -19,6 +19,8 @@ On PS Vita you need to download [NetStream](https://github.com/GrapheneCt/NetStr
 
 # **PS VITA**
 
+Installation tutorial: https://www.youtube.com/watch?v=zJw09obgumc
+
 1) Go to the [releases section](https://github.com/VegettoSan/MovieStreamList/releases) and download the latest version.
 
 2) Transfer the .vpk file to your Ps Vita console via FTP or USB using [VitaShell](https://github.com/TheOfficialFloW/VitaShell/releases).
@@ -39,7 +41,7 @@ On PS Vita you need to download [NetStream](https://github.com/GrapheneCt/NetStr
 3) Inside the data folder at the bottom are all the content files that you have downloaded, open the one you want to play and you will see a list of chapters to watch.
 
 
-# **ESPAÑOL**
+# **-----ESPAÑOL-----**
 
 Creé esta aplicación para poder ver películas y series subidas por la comunidad.
 
@@ -59,6 +61,8 @@ En Ps Vita nesecitas descargar [NetStream](https://github.com/GrapheneCt/NetStre
 3) Disfruta de la aplicación.
 
 # **PS VITA**
+
+Tutorial de instalacion: https://www.youtube.com/watch?v=zJw09obgumc
 
 1) Vaya a la [sección de lanzamientos](https://github.com/VegettoSan/MovieStreamList/releases) y descargue la última versión del VPK.
 
