@@ -76,9 +76,30 @@ RUT:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/No%20Game%20No%
 ARCHIVE:
 #ENDLIST#
 #LIST#
+NAME:STEINS GATE (Sub)
+CREATOR:VegettoSanDev
+COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/STEINSGATE(Sub)/STEINSGATECOVER.jpg?raw=true
+RUT:
+ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/STEINSGATE(Sub)/STEINSGATE(Sub).m3u8
+#ENDLIST#
+#LIST#
 NAME:Studio Ghibli (Latino)
 CREATOR:VegettoSanDev
 COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/Studio%20Ghibli%20(Latino)/CoverGhibli.jpg?raw=true
 RUT:
 ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/Studio%20Ghibli%20(Latino)/Studio%20Ghibli%20Latino.m3u8
+#ENDLIST#
+#LIST#
+NAME:Toradora (Sub)
+CREATOR:VegettoSanDev
+COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/Toradora(Sub)/ToradoraCOVER.jpg?raw=true
+RUT:
+ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/Toradora(Sub)/Toradora(Sub).m3u8
+#ENDLIST#
+#LIST#
+NAME:Tsurezure Children (Sub)
+CREATOR:VegettoSanDev
+COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/TsurezureChildren(Sub)/TsurezureChildrenCOVER.jpg?raw=true
+RUT:
+ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/TsurezureChildren(Sub)/TsurezureChildren(Sub).m3u8
 #ENDLIST#
