@@ -71,6 +71,14 @@ ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Peliculas/ComoEnt
 #ENDLIST#
 
 #LIST#
+NAME:Coraline y La Puerta Secreta (Latino)
+CREATOR:VegettoSanDev
+COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Peliculas/CoralineyLaPuertaSecreta(Latino)/CoralineyLaPuertaSecretaCOVER.jpg?raw=true
+RUT:
+ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Peliculas/CoralineyLaPuertaSecreta(Latino)/CoralineyLaPuertaSecreta(Latino).m3u8
+#ENDLIST#
+
+#LIST#
 NAME:Dune (2021) (Latino)
 CREATOR:VegettoSanDev
 COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Peliculas/Dune%20(2021)%20(Lat-Ing)/DuneCover.jpg?raw=true
