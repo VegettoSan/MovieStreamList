@@ -1,15 +1,15 @@
 #LIST#
-NAME:...Atras
+NAME:...Back
 CREATOR:
-COVER:
+COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/EnglishCOVER.png?raw=true
 RUT:https://github.com/VegettoSan/MovieStreamList/raw/main/Main_English.movstm
 ARCHIVE:
 #ENDLIST#
 
 #LIST#
-NAME:Coming Soon
+NAME:Samurai Jack (English)
 CREATOR:
-COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/EnglishCOVER.png?raw=true
-RUT:https://github.com/VegettoSan/MovieStreamList/raw/main/Main_English.movstm
+COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Series/SamuraiJackCOVER.png?raw=true
+RUT:https://github.com/VegettoSan/MovieStreamList/raw/main/Series/SamuraiJack(English).movstm
 ARCHIVE:
 #ENDLIST#
