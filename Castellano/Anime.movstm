@@ -2,7 +2,7 @@
 NAME:...Atras
 CREATOR:
 COVER:
-RUT:https://github.com/VegettoSan/MovieStreamList/raw/main/Main.movstm
+RUT:https://github.com/VegettoSan/MovieStreamList/raw/main/Main_Castellano.movstm
 ARCHIVE:
 #ENDLIST#
 
@@ -55,14 +55,6 @@ ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/Cyberpunk%2
 #ENDLIST#
 
 #LIST#
-NAME:Dragon Ball Z(Latino)
-CREATOR:VegettoSanDev
-COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/DragonBallZ(Latino)/DragonBallZCOVER.jpg?raw=true
-RUT:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/DragonBallZ(Latino)/DragonBallZSagas.movstm
-ARCHIVE:
-#ENDLIST#
-
-#LIST#
 NAME:Halo Legends (Sub)
 CREATOR:VegettoSanDev
 COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/Halo%20Legends%20(Sub)/H4L0L3G3NDS_COVER.jpg?raw=true
@@ -71,35 +63,11 @@ ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/Halo%20Lege
 #ENDLIST#
 
 #LIST#
-NAME:Inuyasha (Latino)
-CREATOR:VegettoSanDev
-COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/Inuyasha(Latino)/InuyashaCOVER.jpg?raw=true
-RUT:
-ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/Inuyasha(Latino)/Inuyasha(Latino).m3u8
-#ENDLIST#
-
-#LIST#
-NAME:Little Witch Academia (Latino)
-CREATOR:VegettoSanDev
-COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/LittleWicthAcademia(Latino)/LittleWicthAcademiaCOVER.jpg?raw=true
-RUT:
-ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/LittleWicthAcademia(Latino)/LittleWicthAcademia(Latino).m3u8
-#ENDLIST#
-
-#LIST#
 NAME:Mirai Nikki (sub)
 CREATOR:VegettoSanDev
 COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/MiraiNikki(sub)/MiraiNikkiCOVER.jpg?raw=true
 RUT:
 ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/MiraiNikki(sub)/MiraiNikki(sub).m3u8
-#ENDLIST#
-
-#LIST#
-NAME:Neon Genesis Evangelion (Latino)
-CREATOR:VegettoSanDev
-COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/NeonGenesisEvangelion(Latino)/NeonGenesisEvangelionCOVER.jpg?raw=true
-RUT:
-ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/NeonGenesisEvangelion(Latino)/NeonGenesisEvangelion(Latino).m3u8
 #ENDLIST#
 
 #LIST#
@@ -119,27 +87,11 @@ ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/PsychoPass(
 #ENDLIST#
 
 #LIST#
-NAME:Ranma y Medio (Latino)
-CREATOR:VegettoSanDev
-COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/RanmayMedio(Latino)/RanmayMedioCOVER.jpg?raw=true
-RUT:
-ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/RanmayMedio(Latino)/RanmayMedio(Latino).m3u8
-#ENDLIST#
-
-#LIST#
 NAME:STEINS GATE (Sub)
 CREATOR:VegettoSanDev
 COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/STEINSGATE(Sub)/STEINSGATECOVER.jpg?raw=true
 RUT:
 ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/STEINSGATE(Sub)/STEINSGATE(Sub).m3u8
-#ENDLIST#
-
-#LIST#
-NAME:Studio Ghibli (Latino)
-CREATOR:VegettoSanDev
-COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/Studio%20Ghibli%20(Latino)/CoverGhibli.jpg?raw=true
-RUT:
-ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/Studio%20Ghibli%20(Latino)/Studio%20Ghibli%20Latino.m3u8
 #ENDLIST#
 
 #LIST#
