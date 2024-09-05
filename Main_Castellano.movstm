@@ -9,7 +9,7 @@ ARCHIVE:
 #LIST#
 NAME:Animes
 CREATOR:
-COVER:
+COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/CastellanoCOVER.png?raw=true
 RUT:https://raw.githubusercontent.com/VegettoSan/MovieStreamList/main/Castellano/Anime.movstm
 ARCHIVE:
 #ENDLIST#
@@ -17,7 +17,7 @@ ARCHIVE:
 #LIST#
 NAME:Peliculas
 CREATOR:
-COVER:
+COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/CastellanoCOVER.png?raw=true
 RUT:https://raw.githubusercontent.com/VegettoSan/MovieStreamList/main/Castellano/Peliculas.movstm
 ARCHIVE:
 #ENDLIST#
@@ -25,7 +25,7 @@ ARCHIVE:
 #LIST#
 NAME:Series
 CREATOR:
-COVER:
+COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/CastellanoCOVER.png?raw=true
 RUT:https://raw.githubusercontent.com/VegettoSan/MovieStreamList/main/Castellano/Series.movstm
 ARCHIVE:
 #ENDLIST#

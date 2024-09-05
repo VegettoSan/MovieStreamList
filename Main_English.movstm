@@ -9,7 +9,7 @@ ARCHIVE:
 #LIST#
 NAME:Animes
 CREATOR:
-COVER:
+COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/EnglishCOVER.png?raw=true
 RUT:https://raw.githubusercontent.com/VegettoSan/MovieStreamList/main/English/Anime.movstm
 ARCHIVE:
 #ENDLIST#
@@ -17,7 +17,7 @@ ARCHIVE:
 #LIST#
 NAME:Movies
 CREATOR:
-COVER:
+COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/EnglishCOVER.png?raw=true
 RUT:https://raw.githubusercontent.com/VegettoSan/MovieStreamList/main/English/Peliculas.movstm
 ARCHIVE:
 #ENDLIST#
@@ -25,7 +25,7 @@ ARCHIVE:
 #LIST#
 NAME:Series
 CREATOR:
-COVER:
+COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/EnglishCOVER.png?raw=true
 RUT:https://raw.githubusercontent.com/VegettoSan/MovieStreamList/main/English/Series.movstm
 ARCHIVE:
 #ENDLIST#
