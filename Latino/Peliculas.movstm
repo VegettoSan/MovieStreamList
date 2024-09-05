@@ -79,6 +79,14 @@ ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Peliculas/Coralin
 #ENDLIST#
 
 #LIST#
+NAME:Cowboy Bebop La Pelicula (Latino)
+CREATOR:VegettoSanDev
+COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/CowboyBebopPelicula(Latino)/CowboyBebopPeliculaCOVER.jpg?raw=true
+RUT:
+ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/CowboyBebopPelicula(Latino)/CowboyBebopPelicula(Latino).m3u8
+#ENDLIST#
+
+#LIST#
 NAME:Dune (2021) (Latino)
 CREATOR:VegettoSanDev
 COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Peliculas/Dune%20(2021)%20(Lat-Ing)/DuneCover.jpg?raw=true
