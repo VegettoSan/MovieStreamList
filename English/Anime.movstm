@@ -1,5 +1,5 @@
 #LIST#
-NAME:...Atras
+NAME:...Back
 CREATOR:
 COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/EnglishCOVER.png?raw=true
 RUT:https://github.com/VegettoSan/MovieStreamList/raw/main/Main_English.movstm
@@ -8,8 +8,8 @@ ARCHIVE:
 
 #LIST#
 NAME:Coming Soon
-CREATOR:
-COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/EnglishCOVER.png?raw=true
-RUT:https://github.com/VegettoSan/MovieStreamList/raw/main/Main_English.movstm
-ARCHIVE:
+CREATOR:VegettoSanDev
+COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/DinosaurKing(English)/DinosaurKingCOVER.jpg?raw=true
+RUT:
+ARCHIVE:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/DinosaurKing(English)/DinosaurKing(English).m3u8
 #ENDLIST#
