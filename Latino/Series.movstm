@@ -55,6 +55,14 @@ ARCHIVE:
 ##ENDLIST##
 
 #LIST#
+NAME:Los 3 de Abajo: Relatos de Arcadia (Latino)
+CREATOR:VegettoSanDev
+COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Series/Los3DeAbajo(Latino)/Los3DeAbajoCOVER.jpg?raw=true
+RUT:
+ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Series/Los3DeAbajo(Latino)/Los3DeAbajo(Latino).m3u8
+#ENDLIST#
+
+#LIST#
 NAME:Los Jovenes Titanes (Latino)
 CREATOR:VegettoSanDev
 COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Series/LosJovenesTitanes(Latino)/LosJovenesTitanesCOVER.jpg?raw=true
@@ -68,6 +76,14 @@ CREATOR:VegettoSanDev
 COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Series/Lucifer(Latino)/LuciferCOVER.jpg?raw=true
 RUT:
 ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Series/Lucifer(Latino)/Lucifer(Latino).m3u8
+#ENDLIST#
+
+#LIST#
+NAME:Magos Relatos de Arcadia (Latino)
+CREATOR:VegettoSanDev
+COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Series/MagosArcadia(Latino)/MagosArcadiaCOVER.jpg?raw=true
+RUT:
+ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Series/MagosArcadia(Latino)/MagosArcadia(Latino).m3u8
 #ENDLIST#
 
 #LIST#
@@ -87,7 +103,7 @@ ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Series/Thundercat
 #ENDLIST#
 
 #LIST#
-NAME:Trollhunters (Latino)
+NAME:Trollhunters: Relatos de Arcadia (Latino)
 CREATOR:VegettoSanDev
 COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Series/TrollsHunter(Latino)/TrollsHunterCover.jpg?raw=true
 RUT:
