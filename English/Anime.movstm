@@ -23,9 +23,17 @@ ARCHIVE:
 #ENDLIST#
 
 #LIST#
-NAME:Dragon Ball Z Kai (English)
+NAME:Dragon Ball Z (English)
 CREATOR:Haasman0
 COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/DragonBallZ(English)/DragonBallZCOVER.jpg?raw=true
 RUT:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/DragonBallZ(English)/DragonBallZSagas.movstm
+ARCHIVE:
+#ENDLIST#
+
+#LIST#
+NAME:Dragon Ball Z Kai (English)
+CREATOR:Haasman0
+COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/DragonBallZKai(English)/DragonBallZCOVER.jpg?raw=true
+RUT:https://github.com/VegettoSan/MovieStreamList/raw/main/Anime/DragonBallZKai(English)/DragonBallZSagas.movstm
 ARCHIVE:
 #ENDLIST#
