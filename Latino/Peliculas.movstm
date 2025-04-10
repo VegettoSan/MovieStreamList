@@ -79,6 +79,22 @@ ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Peliculas/Coralin
 #ENDLIST#
 
 #LIST#
+NAME:Deadpool 1 (Latino)
+CREATOR:VegettoSanDev
+COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Peliculas/Deadpool1(Latino)/Deadpool1COVER.jpg?raw=true
+RUT:
+ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Peliculas/Deadpool1(Latino)/Deadpool1(Latino).m3u8
+#ENDLIST#
+
+#LIST#
+NAME:Deadpool 2 (Latino)
+CREATOR:VegettoSanDev
+COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Peliculas/Deadpool2(Latino)/Deadpool2COVER.jpg?raw=true
+RUT:
+ARCHIVE:https://github.com/VegettoSan/MovieStreamList/raw/main/Peliculas/Deadpool2(Latino)/Deadpool2(Latino).m3u8
+#ENDLIST#
+
+#LIST#
 NAME:Cowboy Bebop La Pelicula (Latino)
 CREATOR:VegettoSanDev
 COVER:https://github.com/VegettoSan/MovieStreamList/blob/main/Anime/CowboyBebopPelicula(Latino)/CowboyBebopPeliculaCOVER.jpg?raw=true
